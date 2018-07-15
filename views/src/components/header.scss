@@ -1,0 +1,87 @@
+.navbar {
+	height: 40px;
+	background: #fff;
+	margin-bottom: 1.5rem;
+	box-shadow: 0 1px 0px rgba(25, 25, 25, 0.1);
+	color: #222;
+
+	.container{
+
+		div{
+			width: 100%;
+		}
+	}
+	h1, h2 {
+		display: inline-block;
+	}
+	h3{
+		font-size: 20px;
+	}
+	.rf-icon {
+		// fill: #fff;
+	}
+	.rf-icon--search {
+		width: 16px;
+	}
+	svg{
+		width: 16px;
+		fill: #333;
+		fill: #000;
+	}
+	.search{
+		padding: 5px 15px;
+	}
+	.dropdown-btn{
+		cursor: pointer;
+		position: relative;
+		padding: 5px 15px;
+		z-index: 100;
+		&:hover{
+			box-shadow: 0 1px 3px rgba(25, 25, 25, 0.2);
+			border-radius: 5px 5px 3px 3px;
+		}
+
+		&:hover > .dropdown{
+			display: inline-block;
+		}
+		.dropdown{
+			z-index: 99;
+			display: none;
+			background: white;
+			width: 300px;
+			padding: 10px;
+			box-shadow: 0 1px 2px rgba(25, 25, 25, 0.2);
+			// border: 1px solid;
+			border-radius: 0px 5px 3px 3px;
+			position: absolute;
+			left: 0;
+			top: 25px;
+			li{
+				padding: 10px;
+				margin-bottom: 10px;
+				&:hover {
+					background: darken(#ffffff , 10%);
+				}
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
+	.money{
+		color: #1c1b20;
+		line-height: 1.3;
+		font-weight: 700;
+		
+		a{
+			color: #1c1b20;
+			// line-height: 1.3;
+			font-weight: 700;
+
+			span{
+				color: #ff5851;
+			}
+		}
+		
+	}
+}

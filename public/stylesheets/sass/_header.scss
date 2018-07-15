@@ -1,0 +1,16 @@
+.navbar {
+	height: 40px;
+	background: #fff;
+	margin-bottom: 1.5rem;
+	box-shadow: 0 1px 0px rgba(25, 25, 25, 0.1);
+	color: #222;
+	h1, h2 {
+		display: inline-block;
+	}
+	.rf-icon {
+		fill: #fff;
+	}
+	.rf-icon--search {
+		width: 16px;
+	}
+}

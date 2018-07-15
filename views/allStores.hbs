@@ -1,0 +1,20 @@
+{{>header}}
+<div class="container-fluid">
+  <h3 class="lead text-center">
+    All Stores
+  </h3>
+  <hr>
+    <div>
+      <ul class="row p-1">
+        {{#each data}}
+        <li class="list-item col-md-3" style="list-style:none">
+          <a href="/{{this.storeName}}">
+            {{this.storeName}}
+          </a>
+        </li>
+        {{/each}}
+      </ul>
+    </div>
+  </hr>
+</div>
+{{>footer}}

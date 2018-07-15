@@ -1,0 +1,26 @@
+<div class="view details-view">
+	<div class="p-5 ml-5 mr-5">
+		
+		<div class="text-center">
+			<input onkeyup="showResults(this.value)" type="text" name="query" placeholder="Search Deals & Stores" />
+		</div>
+		<a class="search">
+			<svg style="width: 24px;height: 24px;color: #000"> 
+				<use xlink:href="#search"></use> 
+			</svg>
+		</a>
+		<a style="position: absolute;right: 40;top: 40" class="close float-right" >
+			<svg style="width: 44px;height: 44px"> 
+				<use xlink:href="#error"></use> 
+			</svg>
+		</a>
+
+		<div id="search" class=" results m-5 row">
+			<!-- <h2 style="letter-spacing:10px;font-weight:300" class="text-center pb5">STORES</h2> -->
+			<div id="search-results" class="results m-5 row"></div>
+			<div id="deal-results" class="results m-5 row"></div>
+			<!-- <h2 style="letter-spacing:10px;font-weight:300" class="text-center pb-5">DEALS</h2> -->
+		</div>
+
+	</div>
+</div>

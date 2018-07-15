@@ -1,0 +1,116 @@
+$text-primary: #000;
+$text-secondary : #7e818c;
+$text-dark : #33363b;
+
+#content-box{
+	min-height: 80vh;
+}
+
+.outer-box {
+	padding: 10px;
+	text-align: center;
+	.box {
+		background: white;
+		padding: 10px 10px;
+		box-shadow: 0 1px 2px rgba(25, 25, 25, 0.2);
+		border-radius: 5px 5px 3px 3px;
+	}
+	.image {
+		overflow: hidden;
+		width: 100%;
+		height: 150px;
+		img {
+			// height: 100%;
+			width: 100%;
+			// max-width: 150px;
+		}
+	}
+	.price {
+		padding: 10px 0;
+		height: 39px;
+		.cutprice {
+			padding-right: 5px;
+			// text-decoration: line-through;
+			color: $text-secondary;
+			font-size: 0.8rem;
+		}
+		.mainprice {
+			font-size: 1rem;
+			font-weight: 200;
+			color: $text-dark; // padding-left: 5px;
+		}
+	}
+	.storename {
+		color: $text-secondary;
+		font-size: 0.74rem;
+		font-weight: 400;
+	}
+	.dealname {
+		margin-top: 5px;
+		display: block;
+		/* Fallback for non-webkit */
+		display: -webkit-box;
+		max-width: 100%;
+		height: 42px;
+		-webkit-line-clamp: 3;
+		-webkit-box-orient: vertical;
+		overflow: hidden;
+		font-size: 0.75rem;
+		text-align: left;
+		color: $text-secondary;
+		// color: #191919;
+		font-weight: 500;
+		text-overflow: ellipsis;
+		line-height: 1.2;
+	}
+	.getdeal{
+		font-size:.74rem;
+		border-radius: 2em;
+		font-weight: 500;
+		letter-spacing:1px
+	}
+}
+
+#loader {
+	background: #f9f9f9;
+	display: inline-block;
+	position: fixed;
+	padding: 5px;
+	border-radius: 50%;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	box-shadow: 0 1px 2px rgba(25, 25, 25, 0.2);
+}
+
+.containerr {
+	width: 100%;
+	// min-height: 100vh;
+	overflow-x: hidden; // overflow-y: scroll; 
+	position: relative;
+}
+
+.modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	pointer-events: none;
+	opacity: 0;
+	will-change: transform, opacity;
+
+	// -webkit-transform: scale(1.15);
+	// transform: scale(1.15);
+	// -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+	// transition: transform 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.1s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.modal.visible {
+	pointer-events: auto;
+	opacity: 1;
+	// -webkit-transform: scale(1);
+	// transform: scale(1);
+	// -webkit-transition: -webkit-transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+	// transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
